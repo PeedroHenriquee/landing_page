@@ -1,0 +1,327 @@
+/* Importar a fonte 'Roboto' do Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* Estilos Globais */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Configuração de fonte e tamanho padrão para o corpo da página */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+/* Estilos para links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Botão */
+.btn {
+    display: inline-block;
+    padding: 15px 60px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    background: #940808;
+    color: #eeeeee;
+    border-radius: 5px;
+    transition: background 500ms ease;
+}
+
+/* Efeito de hover para o botão */
+.btn:hover {
+    cursor: pointer;
+    background: #f00000;
+}
+
+/* Estilos para cabeçalho */
+.headline {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 50px;
+    letter-spacing: 2px;
+}
+
+/* Barra de Navegação */
+#navbar {
+    width: 100%;
+    background: #251919;
+    color: #eee;
+    height: 80px;
+    position: fixed;
+}
+
+/* Container da Barra de Navegação */
+#navbar-container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo na Barra de Navegação */
+.logo {
+    font-size: 2rem;
+}
+
+/* Itens do Menu na Barra de Navegação */
+#navbar-items {
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+#navbar-items li {
+    padding: 10px;
+}
+
+/* Showcase */
+#showcase {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    background: url('/it-solutions-end/img/showcase.jpg') no-repeat center center/cover;
+
+    /* Overlay */
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: color;
+}
+
+/* Conteúdo do Showcase */
+#showcase-container {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#showcase-container h2 {
+    font-size: 2.5rem;
+}
+
+#showcase-container p {
+    font-size: 1.2rem;
+    padding: 7px 0;
+}
+
+/* Clientes */
+#clients {
+    width: 100%;
+    background: #eee;
+    color: #111;
+    padding: 50px;
+}
+
+/* Container de Clientes */
+#clients-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    padding: 15px;
+}
+
+/* Imagens dos Clientes */
+.client {
+    display: inline-block;
+    width: 25%;
+}
+
+/* Sobre Nós */
+/* Estilo para a seção "Sobre Nós" */
+#about {
+    background-color: #f7f7f7;
+    padding: 40px 0;
+}
+
+#about .headline {
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+}
+
+#about-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#about-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Nossos Serviços */
+/* Estilo para a seção "Nossos Serviços" */
+#service {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+#service .headline {
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+}
+
+#services-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.service {
+    text-align: center;
+}
+
+.service i {
+    font-size: 36px;
+    color: #0d30f3;
+}
+
+.service-title {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.service p {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #666666;
+}
+
+/* Botão de Logout */
+.logout-button {
+    margin-left: 130px;
+    color: #ff0000;
+    text-decoration: none;
+}
+
+/* Efeito de hover para o botão de Logout */
+.logout-button:hover {
+    color: #e7eb00;
+}
+
+/* Produto */
+/* Estilo para a seção "Nosso Produto" */
+#product {
+    background-color: #f7f7f7;
+    padding: 40px 0;
+}
+
+#product .headline {
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+}
+
+#product-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Imagem do Produto */
+#product-container img.iphone-x {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Itens do Produto */
+#items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    width: calc(50% - 20px);
+    margin: 10px;
+    text-align: center;
+}
+
+.item i {
+    font-size: 36px;
+    color: #007bff;
+}
+
+.item p {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #666;
+}
+
+/* Testimonials */
+.testimonial {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    background: #f5f2f2;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+#testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+#testimonials-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.testimonial .testimonial-image {
+    height: 200px;
+    width: auto;
+    border-radius: 50%;
+    margin: 15px;
+}
+
+/* Galeria */
+#gallery {
+    width: 100%;
+    padding: 60px;
+}
+
+/* Container da Galeria */
+#gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    justify-items: center;
+}
+
+/* Imagens da Galeria */
+.gallery-image {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Rodapé */
+#footer {
+    background: #222;
+    color: #eee;
+    padding: 30px;
+    text-align: center;
+}
